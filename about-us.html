@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Rent-a-car" />
+    <meta name="title" property="og:title" content="Rent-a-car" />
+    <meta property="og:type" content="Website" />
+    <meta name="description" property="og:description" content="Rent-a-car" />
+    <meta name="author" content="Pravin Xeona" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+      crossorigin=""
+    />
+    <script
+      src="https://kit.fontawesome.com/c785c45e2e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+      integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+      crossorigin=""
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Rent-a-car</title>
+  </head>
+  <body>
+    <header id="navigation">
+      <div class="header">
+        <div class="logo">
+          <h1>
+            <a href="index.html">Amaze Cabs</a>
+          </h1>
+        </div>
+        <div class="address section">
+          <div class="info_box">
+            <i class="fa fa-home"></i>
+            <div class="info_text">
+              <span class="info_title">Address</span>
+              <span>Bangalore, Karntaka</span>
+            </div>
+          </div>
+        </div>
+        <div class="email section">
+          <div class="info_box">
+            <i class="fa fa-envelope"></i>
+            <div class="info_text">
+              <span class="info_title">Email Us</span>
+              <span>bhanukushwah97@gmail.com</span>
+            </div>
+          </div>
+        </div>
+        <div class="phone section">
+          <div class="info_box">
+            <i class="fa fa-phone"></i>
+            <div class="info_text">
+              <span class="info_title">Call Us</span>
+              <span>+919019082925</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav id="nav__bar">
+        <ul class="nav__items">
+          <li class="nav__item">
+            <a class="nav__link" href="index.html">Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="about-us.html">About Us</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="fleet.html">Amaze fleet</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>About Us</h1>
+      <p>
+        Amaze Cabs in Bangalore is one among the most preferred & trusted taxi &
+        cab services brand and fastest growing company in Bangalore. We have
+        various types of cab such as A/c & Non A/c Hatchback, Sedan, Toyota
+        Innova, Tempo Traveler. etc. We understand the needs of businesses and
+        have tailored our services to ensure that our clients receive a
+        hassle-free rental experience. We are pioneer in the car rental industry
+        with the expertise to deliver the best in class car hire and car leasing
+        services to corporate.
+      </p>
+      <h1>We operate in the following regions:</h1>
+      <div id="locations">
+        <div id="map"></div>
+        <table>
+          <tr>
+            <th>Region</th>
+            <th>Cities</th>
+          </tr>
+          <tr>
+            <td>NORTHERN INDIA</td>
+            <td>
+              Delhi,Meerut, Moradabad, Amritsar, Chandigarh, Ludhiana, Dehradun,
+              Jalandhar, Ambala, Rohtak, Kurkeshtra, Patiala, Agra, Allahabad,
+              Kanpur, Lucknow, Gorakhpur, Aligarh Jhansi, Agra, Bareilly, Jammu,
+              Pathankot.
+            </td>
+          </tr>
+          <tr>
+            <td>WESTERN INDIA</td>
+            <td>
+              Mumbai, Goa, Pune, Kolhapur, Ahmadabad, Nasik, Solapur, Surat,
+              Vadodara, Rajkot, Bhuj, Aurangabad, Ajmer, Jodhpur, Jaipur, Kota,
+              Jhunjhunu, Seekar, Durg.
+            </td>
+          </tr>
+          <tr>
+            <td>CENTRAL INDIA</td>
+            <td>
+              Bhopal, Nagpur, Indore, Jabalpur, Gwalior, Patna, Ranchi, Raipur,
+              Bhilai.
+            </td>
+          </tr>
+          <tr>
+            <td>EASTERN INDIA</td>
+            <td>Bhuvneshwar, Kolkatta, Guwahati, Asansol, Bagdogra.</td>
+          </tr>
+          <tr>
+            <td>SOUTHERN INDIA</td>
+            <td>
+              Bangalore, Mangalore, Belgaum, Hubli, Shimoga, Coimbatore,
+              Chennai, Madhurai, Guntur, Vijayawada, Vizag, Kochi, Trivandrum,
+              Trichy.
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h1>Our clients</h1>
+      <div id="clients">
+        <div class="client">
+          <img src="./images/clients/demandnxt.png" />
+        </div>
+        <div class="client">
+          <img src="./images/clients/mathworks.png" />
+        </div>
+        <div class="client">
+          <img src="./images/clients/sasmos.png" />
+        </div>
+      </div>
+    </main>
+    <footer id="footer">
+      <h2>Connect with us</h2>
+      <div class="social-media-links">
+        <a href="https://www.instagram.com/amaze_cabs/?igshid=YmMyMTA2M2Y%3D"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </footer>
+  </body>
+  <script>
+    const map = L.map("map", { zoomControl: false }).setView(
+      [20.5937, 78.9629],
+      5
+    );
+
+    L.tileLayer(
+      "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}"
+    ).addTo(map);
+
+    const bengaluruMarker = L.marker([12.9716, 77.5946]).addTo(map);
+    bengaluruMarker.bindPopup("<b>Bengaluru</b>");
+
+    const delhiMarker = L.marker([28.7041, 77.1025]).addTo(map);
+    delhiMarker.bindPopup("<b>Delhi</b>");
+
+    const mumbaiMarker = L.marker([19.076, 72.8777]).addTo(map);
+    mumbaiMarker.bindPopup("<b>Mumbai</b>");
+
+    const kolkataMarker = L.marker([22.5726, 88.3639]).addTo(map);
+    kolkataMarker.bindPopup("<b>Kolkata</b>");
+
+    const chennaiMarker = L.marker([13.0827, 80.2707]).addTo(map);
+    chennaiMarker.bindPopup("<b>Chennai</b>");
+  </script>
+</html>
