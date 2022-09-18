@@ -59,10 +59,10 @@
 
 #home-page {
   text-align: center;
-  background: url("./images/city.jpg") no-repeat center center fixed;
+  background: url("./images/Cab.png") no-repeat center center fixed;
   background-size: cover;
-  filter: blur(4px);
-  -webkit-filter: blur(4px);
+ /* filter: blur(4px);
+  -webkit-filter: blur(4px);*/
 }
 
 #home-page,
