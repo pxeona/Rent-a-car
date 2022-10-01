@@ -175,7 +175,6 @@ tr:nth-child(even) {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  width: 945px;
   margin: 0 auto 50px;
   text-align: center;
 }
@@ -198,4 +197,89 @@ main h1 {
 main p {
   padding: 0 100px;
   font-size: 18px;
+}
+
+#home-page .home-caption {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .header .section .info_box {
+    flex-direction: column;
+  }
+
+  .header h1 {
+    text-align: center;
+  }
+
+  .header .section .info_text {
+    text-align: center;
+  }
+
+  #home-page,
+  #fleet-page {
+    min-height: auto;
+  }
+
+  #home-page img {
+    display: none;
+  }
+
+  #home-page .home-caption {
+    display: block;
+    font-size: 110px;
+  }
+
+  main p {
+    padding: 0 12px;
+  }
+
+  #locations {
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    width: calc(100vw - 12px);
+  }
+
+  #locations #map {
+    width: 100%;
+  }
+
+  #clients {
+    grid-template-columns: 1fr;
+    width: auto;
+    margin: 0;
+    gap: 30px;
+  }
+
+  #locations table {
+    display: table;
+    width: 100%;
+    max-width: none;
+  }
+
+  #locations table td,
+  #locations table th {
+    overflow-wrap: anywhere;
+  }
+
+  #locations table tr td:first-child,
+  #locations table tr th:first-child {
+    width: 30%;
+  }
+
+  #fleet-page #car-types {
+    flex-direction: column;
+  }
+  #fleet-page #car-types .type {
+    width: auto;
+  }
 }
