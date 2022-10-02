@@ -199,10 +199,6 @@ main p {
   font-size: 18px;
 }
 
-#home-page .home-caption {
-  display: none;
-}
-
 @media only screen and (max-width: 767px) {
   .header {
     flex-direction: column;
@@ -226,15 +222,6 @@ main p {
   #home-page,
   #fleet-page {
     min-height: auto;
-  }
-
-  #home-page img {
-    display: none;
-  }
-
-  #home-page .home-caption {
-    display: block;
-    font-size: 110px;
   }
 
   main p {
